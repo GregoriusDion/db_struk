@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f0f0;
+    min-height: 100vh;
+    padding: 20px;
+    color: #000;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 0;
+}
+
+.card-header {
+    background: #000;
+    color: #fff;
+    padding: 20px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-radius: 0;
+}
+
+.card-header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.card-header p {
+    font-size: 0.85rem;
+    opacity: 0.75;
+    margin-top: 4px;
+}
+
+.alert {
+    padding: 12px 20px;
+    margin: 16px 24px 0;
+    border-radius: 0;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: 1px solid #000;
+}
+
+.alert-success {
+    background: #e8e8e8;
+    color: #000;
+}
+
+.alert-error {
+    background: #fff;
+    color: #000;
+    border-left: 5px solid #000;
+}
+
+.form {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 700;
+    color: #000;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 10px 14px;
+    border: 2px solid #000;
+    border-radius: 0;
+    font-size: 0.95rem;
+    color: #000;
+    outline: none;
+    background: #fff;
+    transition: background 0.15s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    background: #f5f5f5;
+}
+
+.form-group input::placeholder {
+    color: #999;
+}
+
+.form-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: 2px solid #000;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: background 0.15s, color 0.15s;
+}
+
+.btn-primary {
+    background: #000;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: #333;
+}
+
+.btn-secondary {
+    background: #fff;
+    color: #000;
+}
+
+.btn-secondary:hover {
+    background: #e8e8e8;
+}
+
+.btn-warning {
+    background: #fff;
+    color: #000;
+    border: 2px solid #000;
+}
+
+.btn-warning:hover {
+    background: #e8e8e8;
+}
+
+.btn-danger {
+    background: #000;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background: #444;
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    padding: 0 24px;
+    margin-top: 16px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #000;
+}
+
+thead th {
+    background: #000;
+    color: #fff;
+    padding: 12px 14px;
+    text-align: left;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid #000;
+}
+
+tbody tr {
+    border-bottom: 1px solid #ccc;
+    transition: background 0.1s;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+tbody tr:hover {
+    background: #e8e8e8;
+}
+
+tbody td {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    border: 1px solid #ccc;
+}
+
+.center {
+    text-align: center;
+}
+
+.harga {
+    font-weight: 700;
+    color: #000;
+}
+
+.total-data {
+    padding: 12px 24px;
+    color: #555;
+    font-size: 0.85rem;
+    text-align: right;
+    border-top: 1px solid #ccc;
+}
+
+.badge {
+    padding: 3px 10px;
+    border-radius: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    display: inline-block;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge-makanan,
+.badge-minuman,
+.badge-snack,
+.badge-dessert {
+    background: #fff;
+    color: #000;
+}
+
+.empty-state {
+    padding: 48px 24px;
+    text-align: center;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    border-top: 1px solid #ccc;
+}
+
+.empty-state p {
+    font-size: 0.95rem;
+}
+
+@media (max-width: 600px) {
+    .card-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .table-wrapper {
+        padding: 0 12px;
+    }
+}
